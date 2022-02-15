@@ -1,0 +1,20 @@
+// Fonts
+$fontMerri : 'Merriweather', serif;
+$fontOpenSans: 'Open Sans', sans-serif;
+
+// Colors
+$Gray : rgb(209,215,222);
+$Orange : rgb(246,109,0);
+$LGray : rgb(204,211,219);
+
+// Transparent Button
+@mixin MoreButton {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 3% 12%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $fontOpenSans;
+    font-weight: 700;
+    color: rgb(68, 67, 67);
+}
