@@ -1,3 +1,4 @@
+@import '../BasicPartials';
 .Footer{
     background:url('../../../public/images/FooterBg.jpg') ;
     color: rgb(0, 0, 0);
@@ -7,6 +8,12 @@
     padding: 2% 10%;
     .HeadingMain{
         text-align: center;
+        h1{
+            font-family: $fontMerri;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
     }
     .FooterForm{
         padding: 2% 10%;
@@ -15,6 +22,29 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             background-color: white;
             padding: 5% 5%;
+            p{
+                padding-top: 10px;
+                font-size: 1.3rem;
+                font-family: $fontOpenSans;
+                color: rgb(58, 58, 58);
+            }
+            i{
+                font-size: 1.5rem;
+            }
+
+        }
+        .btn-primary{
+            background-color: $Orange;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        .HeadingMain{
+            h1{
+                font-size: 2rem;
+            }
+    
         }
     }
 }
