@@ -7,6 +7,7 @@ import FitnessCenter from './components/FitnessCenter'
 import GrowWithUs from './components/GrowWithUs';
 import TheClasses from './components/TheClasses';
 import FitnessImages from './components/FitnessImages';
+import Testi from './components/Testi';
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
       <GrowWithUs/>
       <TheClasses/>
       <FitnessImages/>
+      <Testi/>
       <Footer/>
     </div>
   );

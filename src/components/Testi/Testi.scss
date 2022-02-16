@@ -1,0 +1,99 @@
+@import '../BasicPartials';
+
+.Testi{
+    .Heading{
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            font-family: $fontMerri;
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        padding:3% 11%;
+      
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      
+    //   .swiper-slide img {
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+
+      .Test1{
+          justify-content: center;
+          img{
+              height:250px;
+              width: 250px;
+          }
+          padding-bottom: 50px;
+      }
+      p{
+          padding-left:5%;
+          padding-right:5%;
+          padding-bottom: 2%;
+          font-family: $fontOpenSans;
+          font-size: 1.2rem;
+      }
+      h4{
+          font-family: $fontMerri;
+          font-size: 1.5rem;
+          padding-bottom: 2%;
+
+      }
+
+      .footerForm{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      @media screen and (max-width:767px) {          
+            .Test1{
+                img{
+                    height:200px;
+                    width: 200px;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+      }
+
+      @media screen and (max-width:767px) {
+          
+        .Test1{
+            img{
+                height:200px;
+                width: 200px;
+            }
+        }
+        p{
+            font-size: 1rem;
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+      }
+}
