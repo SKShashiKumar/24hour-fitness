@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import FitnessCenter from './components/FitnessCenter'
 import GrowWithUs from './components/GrowWithUs';
 import TheClasses from './components/TheClasses';
+import FitnessImages from './components/FitnessImages';
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       <FitnessCenter/>
       <GrowWithUs/>
       <TheClasses/>
+      <FitnessImages/>
       <Footer/>
     </div>
   );
