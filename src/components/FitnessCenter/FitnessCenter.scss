@@ -1,0 +1,200 @@
+@import '../BasicPartials';
+.FitnessCenter{
+    padding: 3% 1%;
+
+
+    .contentRow{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .MainHeading{
+            font-family: $fontMerri;
+            font-size: 3.5rem;
+            font-weight: 600;
+            padding-bottom: 15px;
+
+        }
+        .SubHeading{
+            padding-bottom: 15px;
+            font-family: $fontOpenSans;
+            font-size: 1.5rem;
+        }
+        ul{
+            list-style: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            li{
+                font-family: $fontOpenSans;
+                font-size: 1.15rem;
+                line-height: 2.7rem;
+                font-weight: 400;
+                &:before{
+                    content : '\2713\0020';
+                    color :$Orange;
+                }
+            }
+        }
+        .OurTraining{
+            font-family: $fontOpenSans;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+
+    .FItnessCenter1,.FItnessCenter2{
+        img{
+            height: 350px;
+            width: 300px;
+        }
+    }
+        @media screen and (max-width:1199px) {
+            .FItnessCenter1,.FItnessCenter2{
+                img{
+                    height: 350px;
+                    width: 300px;
+                }
+            }
+            .contentRow{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .MainHeading{
+                    font-family: $fontMerri;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+        
+                }
+                .SubHeading{
+                    padding-bottom: 15px;
+                    font-family: $fontOpenSans;
+                    font-size: 1.2rem;
+                }
+                ul{
+                    list-style: none;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    li{
+                        font-family: $fontOpenSans;
+                        font-size: 1rem;
+                        line-height: 2.7rem;
+                        font-weight: 400;
+                        &:before{
+                            content : '\2713\0020';
+                            color :$Orange;
+                        }
+                    }
+                }
+                .OurTraining{
+                    font-family: $fontOpenSans;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+
+
+        @media screen and (max-width:991px) {
+            .FItnessCenter1,.FItnessCenter2{
+                img{
+                    height: 300px;
+                    width: 200px;
+                }
+            }
+            .contentRow{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .MainHeading{
+                    font-family: $fontMerri;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+        
+                }
+                .SubHeading{
+                    padding-bottom: 15px;
+                    font-family: $fontOpenSans;
+                    font-size: 1.2rem;
+                }
+                ul{
+                    list-style: none;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    li{
+                        font-family: $fontOpenSans;
+                        font-size: 1rem;
+                        line-height: 2.7rem;
+                        font-weight: 400;
+                        &:before{
+                            content : '\2713\0020';
+                            color :$Orange;
+                        }
+                    }
+                }
+                .OurTraining{
+                    font-family: $fontOpenSans;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+
+        @media screen and (max-width:767px) {
+            .FItnessCenter1,.FItnessCenter2{
+                img{
+                    height: 400px;
+                    width: 300px;
+                }
+            }
+        }
+
+
+        @media screen and (max-width:576px) {
+            .ImageRow{
+                text-align: center;
+                .FItnessCenter1,.FItnessCenter2{
+                    img{
+                    height: 400px;
+                    width: 300px;
+                    }
+                }
+            }
+            .contentRow{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .MainHeading{
+                    font-family: $fontMerri;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+        
+                }
+                .SubHeading{
+                    padding-bottom: 15px;
+                    font-family: $fontOpenSans;
+                    font-size: 1rem;
+                }
+                ul{
+                    list-style: none;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    li{
+                        font-family: $fontOpenSans;
+                        font-size: 1rem;
+                        line-height: 2.5rem;
+                        font-weight: 400;
+                        &:before{
+                            content : '\2713\0020';
+                            color :$Orange;
+                        }
+                    }
+                }
+                .OurTraining{
+                    font-family: $fontOpenSans;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+            }
+
+        }
+}

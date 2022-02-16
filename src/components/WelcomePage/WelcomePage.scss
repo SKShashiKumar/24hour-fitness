@@ -1,0 +1,176 @@
+@import '../BasicPartials';
+
+.WelcomePage{
+    display: flex;
+    padding: 10% 1% 10% 1%;
+    position: relative;
+    // justify-content: center;
+    .image1{
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        height: 600px;
+        width: 900px;
+    }
+    .image2{
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        height: 600px;
+        width: 900px;
+    }
+    .image3{
+        z-index: 10;
+        padding-left: 5%;
+        padding-top: 21%;
+        .container-fluid{
+            height: 400px;
+            width: 500px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px ;
+            .Heading{
+                h1{
+                    font-size: 3.5rem;
+                    font-family: $fontMerri;
+                    font-weight: 600;
+                }
+            }
+            .Description{
+                p{
+                    font-size: 1.2rem;
+                    font-family: $fontOpenSans;
+                    font-style: italic;
+                }
+            }
+            .LearnMore{
+                button{
+                    @include MoreButton;
+                }
+            }
+        }
+    }
+
+        @media screen and (max-width:1199px) {
+            .Heading{
+                h1{
+                    font-size: 3rem !important;
+                }
+            }
+            .Description{
+                p{
+                    font-size: 1.2rem !important;
+                }
+            }
+            .image1{
+                height: 500px;
+                width: 700px;
+            }
+            .image2{
+                height: 500px;
+                width: 700px;
+            }
+            .image3{
+                .container-fluid{
+                    height: 400px;
+                    width: 500px;
+                }
+            }
+        
+        
+        }
+
+
+        @media screen and (max-width:991px) {
+            .Heading{
+                h1{
+                    font-size: 3rem !important;
+                }
+            }
+            .Description{
+                p{
+                    font-size: 1rem !important;
+                }
+            }
+            .image1{
+                height: 300px;
+                width: 500px;
+            }
+            .image2{
+                height: 300px;
+                width: 500px;
+            }
+            .image3{
+                .container-fluid{
+                    height: 300px;
+                    width: 400px;
+                }
+            }
+        
+        
+        }
+
+
+        @media screen and (max-width:767px) {
+            .image1{
+                height: 300px;
+                width: 500px;
+            }
+            .image2{
+                height: 300px;
+                width: 500px;
+            }
+            .image3{
+                .container-fluid{
+                    height: 300px;
+                    width: 400px;
+                }
+            }
+        
+            .Heading{
+                h1{
+                    font-size: 2.5rem !important;
+                }
+            }
+            .Description{
+                p{
+                    font-size: 1rem !important;
+                }
+            }
+
+        }
+
+
+        @media screen and (max-width:576px) {
+            .image1{
+                // height: 100px;
+                // width: 200px;
+                display: none !important;
+            }
+            .image2{
+                // height: 100px;
+                // width: 200px;
+                display: none !important;
+
+            }
+            .image3{
+                .container-fluid{
+                    justify-content: center;
+                    height: 400px;
+                    width: 300px;
+                }
+            }
+        
+            .Heading{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+            .Description{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+}

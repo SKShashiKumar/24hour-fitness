@@ -1,20 +1,22 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import BannerPage from './components/BannerPage';
+import WelcomePage from './components/WelcomePage';
+import AboutUs from './components/AboutUs';
+import FitnessCenter from './components/FitnessCenter'
+import GrowWithUs from './components/GrowWithUs';
+import TheClasses from './components/TheClasses';
 function App() {
   return (
     <div>
       <Header/>
       <BannerPage/>
+      <WelcomePage/>
+      <AboutUs/>
+      <FitnessCenter/>
+      <GrowWithUs/>
+      <TheClasses/>
       <Footer/>
-      {/* <div className="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 order-sm-2">
-        </div>
-        <div class="col-sm-6 order-sm-1">
-        </div>
-      </div>
-      </div> */}
     </div>
   );
 }

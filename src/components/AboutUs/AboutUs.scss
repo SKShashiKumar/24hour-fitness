@@ -1,0 +1,158 @@
+@import '../BasicPartials';
+
+.AboutUs{
+    padding: 1% 5% 0% 5%;
+    height: 100%;
+    background-color: $Gray;
+    .ImageCol{
+        margin-bottom: 20px;
+        padding: 5% 3% 0% 3%;
+    }
+    .ContentCol{
+        padding: 10% 3% 0% 3%;
+        .Title{
+            p{
+                font-family: $fontOpenSans;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        }
+        .MainHeading{
+            h1{
+                font-family: $fontMerri;
+                font-size: 3.5rem;
+                font-weight: 600;
+                // color: $Orange;
+            }
+        }
+        .SubHeading{
+            p{
+                font-family: $fontOpenSans;
+                font-size: 1.1rem;
+                line-height: 1.8;
+                font-weight: 400;
+            }
+        }
+        .LearnMore{
+            padding-top: 10%;
+            padding-bottom: 10%;
+            button{
+                @include MoreButton;
+            }
+        }
+    }
+    @media screen and (max-width:1199px) {
+        .Title{
+            p{
+                font-size: 1.5rem !important;
+            }
+        }
+        .MainHeading{
+            h1{
+                font-size: 3.5rem !important;
+            }
+        }
+        .SubHeading{
+            p{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    @media screen and (max-width:991px) {
+        .Title{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .MainHeading{
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .SubHeading{
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .Title{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .MainHeading{
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .SubHeading{
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        .Title{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .MainHeading{
+            h1{
+                font-size: 2.5rem !important;
+            }
+        }
+        .SubHeading{
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.AboutCard{
+    // margin-bottom: 20px;
+    padding: 10% 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: rgb(255, 255, 255);
+    .row{
+        // padding: 10px 0px 10px 0px !important;
+        padding: 0%;
+        margin: 0%;
+        .col-6{
+            background-color: $Orange;
+            margin: 0%;
+            padding: 5px 10px 5px 10px !important;
+            margin-bottom: 10px;
+            img{
+                padding: 0%;
+                margin: 0%;
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .col-12{
+            margin-bottom: 10px;
+
+            h2{
+                text-align: left;
+                font-family: $fontMerri;
+                font-size: 1.5rem;
+            }
+        }
+        .col-12{
+            p{
+                font-family: $fontOpenSans;
+                font-size: 1.2rem;
+                text-align: left;
+                font-style: italic;
+                color: rgb(95, 94, 94);
+            }
+        }
+    }
+}
