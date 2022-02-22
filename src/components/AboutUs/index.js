@@ -3,6 +3,9 @@ import AboutCard from './AboutCard'
 import './AboutUs.scss'
 
 const AboutUs = () => {
+
+    const CardsImges = ["Athletics","Pilates","Fitness","Jump ropes"]
+
   return (
     <div className="AboutUs">
         <div className="container-fluid">
@@ -28,18 +31,11 @@ const AboutUs = () => {
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ImageCol text-center">
                     <div className="container-fluid">
                         <div className="row g-5">
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <AboutCard ImgName="Athletics"/>
+                            {CardsImges.map((content, i) =>
+                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" key={i}>
+                                <AboutCard ImgName={content}/>
                             </div>
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <AboutCard ImgName="Pilates"/>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <AboutCard ImgName="Fitness"/>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <AboutCard ImgName="Jump ropes"/>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>

@@ -33,12 +33,12 @@ const Footer = () => {
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <form>
                     <div className="mb-3">
-                      <label for="name" className="form-label">Name </label>
+                      <label htmlFor="name" className="form-label">Name </label>
                       <input type="text" className="form-control" id="name"/>
                     </div>
 
                     <div className="mb-3">
-                      <label for="exampleInputEmail1" className="form-label">Email address</label>
+                      <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                       <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                     </div>
 

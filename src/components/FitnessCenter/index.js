@@ -2,6 +2,9 @@ import React from 'react'
 import './FitnessCenter.scss'
 
 const FitnessCenter = () => {
+
+    const Features = ['Treadmills','Treadmills','Treadmills','Treadmills','Treadmills','Treadmills','Treadmills','Treadmills']
+    const PhysioBalls = ['Physio balls','Physio balls','Physio balls','Physio balls','Physio balls','Physio balls','Physio balls','Physio balls']
   return (
     <div className="FitnessCenter">
         <div className="container-fluid">
@@ -29,26 +32,17 @@ const FitnessCenter = () => {
                         <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <ul>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
-                                    <li>Treadmills</li>
+                                    {Features.map((content,i) => 
+                                        <li key={i}>{content}</li>
+                                    )}
                                 </ul>
                             </div>
                             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <h4 className='OurTraining'>Our training accessories include:</h4>
                                 <ul>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
-                                    <li>Physio balls</li>
+                                    {PhysioBalls.map((content,i) => 
+                                        <li key={i}>{content}</li>
+                                    )}
                                 </ul>
                         </div>
                         </div>
